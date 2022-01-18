@@ -9,6 +9,32 @@ body {
     text-align: justify;
 }
 
+
+nav a {    
+    font-size: 0.9rem; 
+}
+
+h1 {
+    font-size: 1.5rem; 
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 1.3rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+p, table {
+    font-size: 13px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
 h2, h3 {
     color: #00a2c6;
 }
@@ -28,18 +54,18 @@ header article{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1.1rem;
 }
 
-header h1 {
-    margin-top: 0;
-    font-size: 2.2rem;
+header {
+    display: inline;
 }
 
 nav {
     background-color: #6ed4eb;
     width: 100%;
     height: 60px;
+    position: sticky;
+    top: 0;
 }
 
 nav ul {
@@ -56,26 +82,88 @@ nav li {
 nav a {
     text-decoration: none;
     color: white;
-    font-size: 1.1rem;
     margin-right: 20px;
+}
+
+nav a:hover {
+    font-weight: bolder;
 }
 
 main {
     margin: 20px 20px;
-    display: flex;
 }
 
 aside {
-    margin-left: 20px;
+    width: 100%;
     text-align: center;
 }
 
+aside header img {
+    width: 50%;
+}
+
+aside article section table{
+    margin: auto;
+}
+
 main article {
-    border: 1px solid gray;
     margin-bottom: 20px;
-    padding: 10px;
+    padding: 20px;
 }
 
 footer {
     text-align: center;
+    font-weight: bold;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Responsive */
+@media screen and (min-width: 600px) {
+    .content {
+        width: 100%;
+    }
+
+    aside {
+        width: 40%;
+        margin-left: 20px;
+    }
+
+    main {
+        display: flex;
+    }
+
+    header article {
+        font-size: 1.1rem;
+    }
+
+    header h1 {
+        font-size: 2.2rem; 
+    }
+
+    nav a {    
+        font-size: 1.1rem; 
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    p, table {
+        font-size: 16px;
+    }
 }

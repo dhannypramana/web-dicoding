@@ -37,6 +37,7 @@ h1 {
 }
 
 .button {
+    border: none;
     border-right: 1px solid black;
     border-bottom: 1px solid black;
     flex-basis: 25%;

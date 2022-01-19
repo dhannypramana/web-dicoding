@@ -1,17 +1,28 @@
 * {
     box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 13px;
+}
+
+.big-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.history-container {
+    border: 1px solid black;
 }
 
 .container {
     width: 40%;
     background-color: whitesmoke;
-    margin: 0 auto;
+    box-shadow: 4px 8px 4px rgb(243, 225, 225);
 }
 
 .layar {
     color: white;
     background-color: #333333;
-    height: 100px;
+    height: 120px;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -41,7 +52,7 @@ h1 {
     border-right: 1px solid black;
     border-bottom: 1px solid black;
     flex-basis: 25%;
-    height: 65px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,4 +84,21 @@ h1 {
 
 .lborder{
     border-left: 1px solid black;
+}
+
+table th {
+    border: 1px solid black;
+    padding: 20px 30px;
+    background-color: orange;
+    color: white;
+}
+
+table tr:hover {
+    background-color: gray;
+}
+
+table tr td {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
 }

@@ -6,40 +6,61 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kalkulator</title>
     <link rel="stylesheet" href="../assets/style/kalkulator.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <div class="container">
-        <div class="layar">
-            <h1 id="displayNumber">0</h1>
+    <div class="big-container">
+        <div class="container">
+            <div class="layar">
+                <h1 id="displayNumber">0</h1>
+            </div>
+    
+            <div class="button-container">
+                <div class="flex-row">
+                    <button class="button lborder">7</button>
+                    <button class="button">8</button>
+                    <button class="button">9</button>
+                    <button class="button operator inverse">+/-</button>
+                </div>
+                <div class="flex-row">
+                    <button class="button lborder">4</button>
+                    <button class="button">5</button>
+                    <button class="button">6</button>
+                    <button class="button operator minus">-</button>
+                </div>
+                <div class="flex-row">
+                    <button class="button lborder">1</button>
+                    <button class="button">2</button>
+                    <button class="button">3</button>
+                    <button class="button operator add">+</button>
+                </div>
+                <div class="flex-row">
+                    <button class="button lborder clear">CE</button>
+                    <button class="button">0</button>
+                    <button class="button double operator equal">=</button>
+                </div>
+            </div>
         </div>
 
-        <div class="button-container">
-            <div class="flex-row">
-                <button class="button lborder">7</button>
-                <button class="button">8</button>
-                <button class="button">9</button>
-                <button class="button operator">+/-</button>
-            </div>
-            <div class="flex-row">
-                <button class="button lborder">4</button>
-                <button class="button">5</button>
-                <button class="button">6</button>
-                <button class="button operator">-</button>
-            </div>
-            <div class="flex-row">
-                <button class="button lborder">1</button>
-                <button class="button">2</button>
-                <button class="button">3</button>
-                <button class="button operator">+</button>
-            </div>
-            <div class="flex-row">
-                <button class="button lborder">CE</button>
-                <button class="button">0</button>
-                <button class="button double operator">=</button>
-            </div>
+        <div class="history-container">
+            <table>
+                <tbody id="table-history">
+                    <tr>
+                        <th colspan="4">History Kalkulator</th>
+                    </tr>
+                    <tr>
+                        <th>Angka 1</th>
+                        <th>Operator</th>
+                        <th>Angka 2</th>
+                        <th>Hasil</th>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 
-        <script src="../script/kalkulator.js"></script>
+    <script src="../script/kalkulator.js"></script>
 </body>
 </html>

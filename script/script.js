@@ -12,19 +12,6 @@ function changeImage() {
     imageText.innerHTML = "<em>Tiga Anak Kucing</em>";
 }
 
-/*
-Function Approach
-
-    function count() {
-    clickCount++;
-    let numberCount = document.getElementById("counter");
-    numberCount.innerHTML = clickCount;
-    console.log(clickCount);
-}
-*/
-
-/* Listener Approach*/
-
 let catImage = document.getElementById("catImage");
 
 catImage.addEventListener('click', function(event) {
@@ -32,3 +19,11 @@ catImage.addEventListener('click', function(event) {
     let numberCount = document.getElementById("counter");
     numberCount.innerHTML = clickCount;
 });
+
+const cacheKey = "NUMBER";
+if (typeof(Storage) !== "undefined") { /* Session Storage */
+    // pengecekkan apakah data sessionStorage dengan key NUMBER tersedia atau belum
+    if (sessionStorage.cacheKey === "undefined") {
+        sessionStorage.setItem(cacheKey, 0);
+    }
+}
